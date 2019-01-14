@@ -1,6 +1,8 @@
 .container{
     max-width: 120rem;
-    margin: 8rem auto;
+    margin: 8rem;
+   
+    
     background-color: var(--color-Grey-light-2);
     box-shadow: var(--shadow-dark);
 
@@ -8,9 +10,14 @@
 }
 
 .header{
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-Grey-light-2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .content{
