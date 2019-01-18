@@ -7,7 +7,13 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
+        <style type="text/css">
+@media (min-width:1800px){
+.sfasd {
+	font-size: 15px;
+}
+}
+        </style>
         <title>trillo &mdash; Your all-in-one booking app</title>
     </head>
     <body>
@@ -15,7 +21,7 @@
             <header class="header">
                 <img src="img/logo.png" alt="trillo logo" class="logo">
                 <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search hotel">
+                  <input type="text" class="search__input dfg sfasd" placeholder="Search hotel">
                     <button class="search__btn">
                         <svg class="search__icon">
                             <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
@@ -156,8 +162,42 @@
                             </div>
                         </div>
                         <div class="user-reviews">
-                            2
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In modi, ducimus accusamus eligendi incidunt vero?
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-1.jpg" alt="" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Nick Smith</p>
+                                        <p class="review__user-date">Feb 23rd, 2018</p>
+                                    </div>
+                                    <div class="review__rating">7.8</div>
+                                </figcaption>
+                            </figure>
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consdi, ducimus acincidunt vero?
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-2.jpg" alt="" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Jenny Kow</p>
+                                        <p class="review__user-date">Jan 2werd, 2018</p>
+                                    </div>
+                                    <div class="review__rating">9.3</div>
+                                </figcaption>
+                            </figure>
+                            <button class="btn-inline">Show all <span>&rarr;</span></button>
                         </div>
+                    </div>
+
+                    <div class="cta">
+                        <h2 class="cta__book-now">Good new! we have 4 free rooms for your selected dates</h2>
+                        <button class="btn">
+                            <span class="btn__visible">Book now</span>
+                            <span class="btn__invisible">only 4 rooms left</span>                            
+                        </button>
                     </div>
                 </main>
             </div>
